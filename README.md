@@ -1,4 +1,4 @@
-# npl_chat_interface
+# NPL Chat Interface
 
 Chat interface inspired by Instagram direct messages, built with React and Typescript
 
