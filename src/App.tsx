@@ -1,15 +1,20 @@
 import React from 'react';
+import { BrowserRouter, Route } from 'react-router-dom';
 
-import { Container, GlobalStyle } from './styles';
+import { AuthProvider } from './context/auth';
+
+import DirectMessage from './pages/DirectMessage';
+
+import GlobalStyle from './global';
 
 const App: React.FC = () => {
   return (
-    <>
+    <AuthProvider>
       <GlobalStyle />
-      <Container>
-        <h1>My Application</h1>
-      </Container>
-    </>
+      <BrowserRouter>
+        <Route path="/" component={DirectMessage} />
+      </BrowserRouter>
+    </AuthProvider>
   );
 };
 
