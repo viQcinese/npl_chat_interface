@@ -1,7 +1,5 @@
 # npl_chat_interface
 
-# Border-radius Previewer
-
 Chat interface inspired by Instagram direct messages, built with React and Typescript
 
 ## Features
